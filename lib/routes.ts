@@ -1,5 +1,6 @@
 export const pageRoutes = {
     home: '/',
     about: '/about',
-    writing: '/writing'
+    writing: '/writing',
+    follow: '/follow'
 }
