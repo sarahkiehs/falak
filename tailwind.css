@@ -1,4 +1,63 @@
-/* ./styles/globals.css */
 @tailwind base;
+
+@layer base {
+
+  h1 {
+    @apply text-3xl font-bold pt-8;
+  }
+  h2 {
+    @apply text-2xl font-semibold pt-8;
+  }
+  h3 {
+    @apply text-xl font-semibold pt-4;
+  }
+
+  h4 {
+    @apply text-xl italic pt-4;
+  }
+
+  h5 {
+    @apply text-lg pt-4;
+  }
+
+  a {
+    @apply text-blue;
+  }
+
+  p {
+    @apply p-1;
+  }
+
+  html,
+  body {
+    @apply tracking-wide leading-loose;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply text-black;
+  }
+
+  blockquote {
+    @apply italic md:p-10 p-3;
+  }
+
+  /* Markdown */
+  .markdown {
+    @apply md:p-10
+  }
+  .markdown ul {
+    @apply list-disc list-inside;
+  }
+  .markdown ul ul {
+    @apply list-disc ml-3;
+  }
+
+  .markdown h1 {
+    @apply grid justify-items-center p-3;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
