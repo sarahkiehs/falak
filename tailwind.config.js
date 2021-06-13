@@ -1,5 +1,13 @@
 module.exports = {
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  purge: [
+    './components/**/*.tsx',
+    './components/**/**/*.tsx',
+    './components/**/**/**/*.tsx',
+    './pages/**/*.tsx',
+    './pages/*.tsx',
+    './layouts/**/*.tsx'
+  ],
+
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: {
@@ -11,7 +19,7 @@ module.exports = {
       red: '#DF2D16',
       blue: '#5386E4',
       green: '3E8914',
-      yellow: "#FFD166",
+      yellow: '#FFD166',
       gray: {
         hero: '#030306',
         dark: '#141414',
@@ -25,12 +33,12 @@ module.exports = {
     },
     extend: {
       width: {
-        '240': '50rem',
+        240: '50rem'
       }
     }
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  plugins: [],
-};
+  plugins: []
+}
