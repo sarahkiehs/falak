@@ -1,16 +1,16 @@
 ---
-title: 'First Blog'
+title: 'Dad'
 date: '2021-6-13'
 desc: 'Blog Here' 
 ---
 
-# Blog
-Testing hello world
+# DAD
+adad
 
 - hi nuget
-- chicken nuget
+- dada
 
 ## Yoyo
-I am so cool
+dadad
 
 - I will zucc you

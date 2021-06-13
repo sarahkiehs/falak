@@ -10,7 +10,7 @@ const Intro = () => (
         {' '}
         About Me
       </Button>
-      <Button color='gray' text={true}>
+      <Button color='gray' text={true} href={pageRoutes.follow}>
         {' '}
         Follow Me
       </Button>
