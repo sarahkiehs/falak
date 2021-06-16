@@ -1,4 +1,4 @@
-export type navKeys = 'home' | 'about' | 'stack' | 'writing' | 'AMA' | 'bookmarks' | 'follow'
+export type navKeys = 'home' | 'about' | 'stack' | 'writing' | 'AMA' | 'bookmarks' | 'follow' | 'contact'
 
 export interface TimelineDataObject {
   slug?: string

@@ -1,19 +1,16 @@
-
-import General from '../layouts/General'
+import HomePage from '../layouts/HomePage'
 import Intro from '../components/Home/Intro'
 
 export default function Home() {
   return (
-    <General
+    <HomePage
       iconHref='/ico/wave.ico'
-      title="Falak Page"
+      title='Falak Page'
       selectedNavKey='home'
       description="Hi there! This is Falak's page"
       canonical='/'
     >
-      <div className='space-y-10 md:flex md:flex-col'>
-        <Intro />
-      </div>
-    </General>
+      <Intro />
+    </HomePage>
   )
 }

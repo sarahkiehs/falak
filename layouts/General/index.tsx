@@ -1,5 +1,4 @@
 import { ReactNode } from 'react'
-import Footer from '../../components/utils/Footer'
 import Header from '../../components/utils/Header'
 import SEOMeta from '../../components/utils/SEO'
 import { navKeys } from '../../lib/types'
@@ -19,7 +18,6 @@ const General = ({ children, title, description, selectedNavKey, iconHref, canon
     <div className='flex flex-col min-h-screen overflow-y justify-between'>
       <Header selectedKey={selectedNavKey} />
       <main className='mb-auto max-w-7xl p-7 md:mx-auto py-6 sm:px-6 lg:px-8'>{children}</main>
-      <Footer />
     </div>
   </>
 )
