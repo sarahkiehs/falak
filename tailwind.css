@@ -57,6 +57,13 @@
   .markdown h1 {
     @apply grid justify-items-center p-3;
   }
+
+  .markdown td {
+    @apply table-auto bg-secondary border-2;
+  }
+  .markdown th{
+    @apply table-auto bg-secondary border-2;
+  }
 }
 
 @tailwind components;

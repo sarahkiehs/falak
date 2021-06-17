@@ -7,15 +7,15 @@ export interface PostData {
 
 export const postMap: PostData[] = [
   {
-    name: 'First Blog',
-    description: 'hohoho',
+    name: 'Hello',
+    description: 'testing',
     linkName: 'blog', // has to be name of file
     lastMod: '2021-06-13'
   },
   {
-    name: 'My Daddy Is cool ',
-    description: 'hohoho',
-    linkName: 'myDaddy',
+    name: 'World',
+    description: 'testing2',
+    linkName: 'blog2',
     lastMod: '2021-06-13'
   }
 ]
