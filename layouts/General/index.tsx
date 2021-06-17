@@ -10,14 +10,15 @@ interface Props {
   selectedNavKey: navKeys
   iconHref?: string
   canonical: string
+  background?: 'bg-black'
 }
 
-const General = ({ children, title, description, selectedNavKey, iconHref, canonical }: Props) => (
+const General = ({ children, title, description, selectedNavKey, iconHref, canonical, background }: Props) => (
   <>
     <SEOMeta title={title} canonical={canonical} description={description} iconHref={iconHref} />
-    <div className='flex flex-col min-h-screen overflow-y justify-between'>
+    <div className={`flex flex-col min-h-screen overflow-y ${background}`}>
       <Header selectedKey={selectedNavKey} />
-      <main className='mb-auto max-w-7xl p-7 md:mx-auto py-6 sm:px-6 lg:px-8'>{children}</main>
+      <main>{children}</main>
     </div>
   </>
 )

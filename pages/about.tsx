@@ -9,13 +9,12 @@ export default function About() {
       description='About Falak...'
       canonical='/about'
     >
-      <div className='space-y-10'>
-        <div className='flex flex-col items-center'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png'
-            alt='Falak'
-          />
+      <div className='shadow-md grid bg-gray'>
+        <div className='md:w-1/4 p-2 place-self-center grid'>
+          <img src='/img/sitting.webp' alt='Falak' className='object-contain place-self-center' />
         </div>
+      </div>
+      <div className='mb-auto p-7 md:mx-auto py-6 sm:px-6 lg:px-8 grid'>
         <AboutMe />
       </div>
     </General>

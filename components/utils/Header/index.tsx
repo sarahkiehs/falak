@@ -3,6 +3,7 @@ import { pageRoutes } from '../../../lib/routes'
 import { navKeys } from '../../../lib/types'
 
 import { FaHome, FaPen, FaBook, FaEnvelope } from 'react-icons/fa'
+import { headerText } from '../../../lib/constants/headers'
 
 const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
   const getSelectedDesktop = (key: navKeys) => {
@@ -15,22 +16,22 @@ const Header = ({ selectedKey }: { selectedKey: navKeys }) => {
         {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
         <a href={pageRoutes.home} className={getSelectedDesktop('home')}>
           <div className='place-self-center flex gap-2'>
-            <FaHome className='place-self-center' /> Home
+            <FaHome className='place-self-center' /> {headerText.home}
           </div>
         </a>
         <a href={pageRoutes.about} className={getSelectedDesktop('about')}>
           <div className='place-self-center flex gap-2'>
-            <FaBook className='place-self-center' /> About
+            <FaBook className='place-self-center' /> {headerText.about}
           </div>
         </a>
         <a href={pageRoutes.writing} className={getSelectedDesktop('writing')}>
           <div className='place-self-center flex gap-2'>
-            Writing <FaPen className='place-self-center' />
+            {headerText.writing} <FaPen className='place-self-center' />
           </div>
         </a>
-        <a href='#' className={getSelectedDesktop('contact')}>
+        <a href={pageRoutes.follow} className={getSelectedDesktop('contact')}>
           <div className='place-self-center flex gap-2'>
-            Contact <FaEnvelope className='place-self-center' />
+            {headerText.contact} <FaEnvelope className='place-self-center' />
           </div>
         </a>
       </nav>

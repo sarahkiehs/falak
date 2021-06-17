@@ -25,10 +25,12 @@ export default function Post({ id, data, content }) {
       canonical={`/writing/${id}`}
       description={data.desc}
     >
-      <div className='md:max-w-4xl space-y-3 markdown'>
+      <div className="grid">
+      <div className='md:max-w-4xl space-y-3 markdown place-self-center'>
         <ReactMarkdown remarkPlugins={[gfm]}>
           {content}
         </ReactMarkdown>
+      </div>
       </div>
     </General>
   )

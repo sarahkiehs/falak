@@ -1,5 +1,17 @@
-import AboutMe from '../components/AboutMe'
+import {
+  SocialMediaFacebook,
+  SocialMediaInstagram,
+  SocialMediaTikTok,
+  SocialMediaYouTube
+} from '../components/SocialMedia'
 import General from '../layouts/General'
+import { contactDetails, ContactDetailsProps } from '../lib/constants/contacts'
+
+const Details = (p: ContactDetailsProps) => (
+  <p>
+    {p.name}: {p.field}
+  </p>
+)
 export default function About() {
   return (
     <General
@@ -9,11 +21,22 @@ export default function About() {
       description='Follow'
       canonical='/follow'
     >
-      <div className='space-y-10'>
-        <div className='flex flex-col items-center'>
-          <a href='#'>Instagram</a>
-          <a href='#'>Instagram</a>
-          <a href='#'>Instagram</a>
+      <div className='y-space-2'>
+        <h1 className='text-center m-5'>Contact</h1>
+
+        <h2 className='text-center m-5'>Details</h2>
+        <div className='text-center'>
+          {contactDetails.map(d => (
+            <Details {...d} />
+          ))}
+        </div>
+
+        <h2 className='text-center m-5'>Follow Me!</h2>
+        <div className='grid grid-cols-4 gap-2'>
+          <SocialMediaFacebook text={true} />
+          <SocialMediaTikTok text={true} />
+          <SocialMediaInstagram text={true} />
+          <SocialMediaYouTube text={true} />
         </div>
       </div>
     </General>
