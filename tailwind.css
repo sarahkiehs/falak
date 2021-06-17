@@ -30,7 +30,7 @@
 
   html,
   body {
-    @apply tracking-wide leading-loose;
+    @apply tracking-wide leading-loose break-words;
   }
 
   input,
